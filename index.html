@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rakhi Collection 2025</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ===== CSS Variables ===== */
+    :root {
+      --primary: #d32f2f;
+      --secondary: #b71c1c;
+      --accent: #ff5252;
+      --light: #fff8e1;
+      --dark: #c62828;
+      --text: #333333;
+      --success: #4caf50;
+      --cream: #fff8e1;
+      --card-bg: #ffffff;
+      --border: rgba(210, 47, 47, 0.1);
+    }
+    
+    /* ===== Base Styles ===== */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* ===== Header Styles ===== */
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 1.8rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(179, 38, 38, 0.2);
+      border-bottom: 4px solid var(--cream);
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, 
+        rgba(255,255,255,0) 0%, 
+        rgba(255,255,255,0.6) 50%, 
+        rgba(255,255,255,0) 100%);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+      position: relative;
+      z-index: 1;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.1rem;
+      opacity: 0.9;
+      position: relative;
+      z-index: 1;
+    }
+
+    .store-name {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-top: 0.8rem;
+      display: inline-block;
+      background: var(--cream);
+      color: var(--primary);
+      padding: 0.4rem 2rem;
+      border-radius: 50px;
+      box-shadow: 0 4px 15px rgba(179, 38, 38, 0.2);
+      border: 2px solid white;
+      position: relative;
+      z-index: 1;
+      transition: all 0.3s ease;
+    }
+
+    .store-name:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(179, 38, 38, 0.3);
+    }
+
+    /* ===== Main Content Styles ===== */
+    .container {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .category-title {
+      text-align: center;
+      color: var(--primary);
+      margin: 3rem 0 1.5rem;
+      font-size: 1.8rem;
+      position: relative;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding-bottom: 0.5rem;
+    }
+
+    .category-title:after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      margin: 0.5rem auto;
+      border-radius: 2px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(179, 38, 38, 0.1);
+      overflow: hidden;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+      border: 1px solid var(--border);
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(179, 38, 38, 0.15);
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(to right, var(--primary), var(--accent));
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      display: block;
+      padding: 1.5rem;
+      background: white;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.03);
+    }
+
+    .card h3 {
+      margin: 1rem 0 0.3rem;
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 0 1rem;
+    }
+
+    .price-tag {
+      display: inline-block;
+      background: linear-gradient(to right, var(--primary), var(--accent));
+      color: white;
+      padding: 0.4rem 1.2rem;
+      border-radius: 20px;
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+      font-size: 1rem;
+      box-shadow: 0 3px 8px rgba(179, 38, 38, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover .price-tag {
+      transform: scale(1.05);
+    }
+
+    /* ===== Footer Styles ===== */
+    .footer {
+      background: linear-gradient(135deg, var(--dark), var(--secondary));
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+      margin-top: 3rem;
+      border-top: 4px solid var(--cream);
+      position: relative;
+    }
+
+    .footer::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, 
+        rgba(255,255,255,0) 0%, 
+        rgba(255,255,255,0.6) 50%, 
+        rgba(255,255,255,0) 100%);
+    }
+
+    .social-links {
+      margin-bottom: 2rem;
+    }
+
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 50%;
+      margin: 0 10px;
+      color: white;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .social-links a:hover {
+      background: var(--accent);
+      transform: translateY(-5px) scale(1.1);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .footer h2 {
+      margin: 0.8rem 0;
+      font-weight: 500;
+      font-size: 1.5rem;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+
+    .footer p {
+      margin: 0.6rem 0;
+      opacity: 0.9;
+      font-size: 1.05rem;
+    }
+
+    .contact-info {
+      margin: 1.5rem 0;
+    }
+
+    .contact-info i {
+      margin-right: 10px;
+      color: var(--cream);
+      font-size: 1.1rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin: 0;
+      display: block;
+      filter: grayscale(20%) contrast(110%);
+    }
+
+    .developed {
+      background: var(--dark);
+      color: white;
+      padding: 1.2rem;
+      text-align: center;
+      font-size: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .developed strong {
+      color: var(--cream);
+      font-weight: 600;
+    }
+
+    /* ===== Modal Styles ===== */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0; top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.9);
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 0.4s;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    .modal-content {
+      background: white;
+      padding: 2rem;
+      border-radius: 16px;
+      width: 90%;
+      max-width: 450px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+      animation: slideUp 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+      border-top: 5px solid var(--primary);
+    }
+
+    @keyframes slideUp {
+      from {transform: translateY(30px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+
+    .modal-content img {
+      width: 100%;
+      max-height: 250px;
+      object-fit: contain;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .modal-content:hover img {
+      transform: scale(1.02);
+    }
+
+    .close {
+      position: absolute;
+      top: 15px; right: 20px;
+      font-size: 1.8rem;
+      cursor: pointer;
+      color: var(--text);
+      transition: all 0.2s;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+
+    .close:hover {
+      color: var(--accent);
+      background: rgba(210, 47, 47, 0.1);
+    }
+
+    .whatsapp-button {
+      background: linear-gradient(to right, var(--success), #25D366);
+      color: white;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1.5rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-size: 0.95rem;
+    }
+
+    .whatsapp-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+      background: linear-gradient(to right, #25D366, var(--success));
+    }
+
+    .whatsapp-button i {
+      margin-right: 10px;
+      font-size: 1.2rem;
+    }
+
+    /* ===== Decorative Elements ===== */
+    .floating {
+      position: absolute;
+      opacity: 0.1;
+      z-index: 0;
+    }
+
+    .floating-1 {
+      top: 20px;
+      left: 5%;
+      font-size: 5rem;
+      transform: rotate(-15deg);
+      color: var(--cream);
+    }
+
+    .floating-2 {
+      bottom: 30px;
+      right: 5%;
+      font-size: 4rem;
+      transform: rotate(15deg);
+      color: var(--cream);
+    }
+
+    /* ===== Responsive Styles ===== */
+    @media (max-width: 992px) {
+      .cards {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1.5rem;
+      }
+      
+      .card img {
+        height: 180px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+      }
+      
+      .card img {
+        height: 160px;
+        padding: 1rem;
+      }
+      
+      .modal-content {
+        padding: 1.5rem;
+      }
+      
+      header h1 {
+        font-size: 1.8rem;
+      }
+      
+      .store-name {
+        font-size: 1.5rem;
+        padding: 0.3rem 1.5rem;
+      }
+      
+      .category-title {
+        font-size: 1.6rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+      
+      .card img {
+        height: 140px;
+      }
+      
+      .card h3 {
+        font-size: 1rem;
+      }
+      
+      .price-tag {
+        font-size: 0.9rem;
+        padding: 0.3rem 1rem;
+      }
+      
+      header h1 {
+        font-size: 1.6rem;
+      }
+      
+      .store-name {
+        font-size: 1.3rem;
+        padding: 0.2rem 1.2rem;
+      }
+      
+      .category-title {
+        font-size: 1.4rem;
+      }
+      
+      .footer h2 {
+        font-size: 1.3rem;
+      }
+      
+      .footer p {
+        font-size: 1rem;
+      }
+      
+      .whatsapp-button {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Header Section ===== -->
+  <header>
+    <div class="floating floating-1">🌸</div>
+    <div class="floating floating-2">🌸</div>
+    <h1>Rakhi Collection 2025</h1>
+    <p>by</p>
+    <div class="store-name">Gupta General Store</div>
+  </header>
+
+  <!-- ===== Main Content Section ===== -->
+  <div class="container">
+    <!-- Premium Rakhis (₹80 and above) -->
+    <h2 class="category-title">Premium Rakhis</h2>
+    <div class="cards" id="premium-rakhis">
+      <!-- Premium rakhis will be inserted here by JavaScript -->
+    </div>
+
+    <!-- Traditional Rakhis (Below ₹80) -->
+    <h2 class="category-title">Traditional Rakhis</h2>
+    <div class="cards" id="traditional-rakhis">
+      <!-- Traditional rakhis will be inserted here by JavaScript -->
+    </div>
+  </div>
+
+  <!-- ===== Footer Section ===== -->
+  <div class="footer">
+    <div class="social-links">
+      <a href="https://www.instagram.com/saumy_gupta_1748?igsh=MXMzaGJieWF5MmVqZw=="><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://wa.me/919919617132"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    
+    <div class="contact-info">
+      <h2><i class="fas fa-map-marker-alt"></i> Gupta General Store</h2>
+      <p><i class="fas fa-phone"></i> 9919617132</p>
+      <p><i class="fas fa-clock"></i> 7AM - 9PM</p>
+    </div>
+  </div>
+
+  <!-- Google Map -->
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d223.07645706297322!2d81.22621754716494!3d26.545092981984133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bc0943744f319%3A0x7b1d79734d96f70f!2sKanhaya%20Vastralaya!5e0!3m2!1sen!2sin!4v1753392223729!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  
+  <!-- Developer Credit -->
+  <div class="developed">Designed & Developed by <strong>Saurabh Sahu</strong></div>
+
+  <!-- ===== Modal Section ===== -->
+  <div class="modal" id="imageModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="modalImage" src="" alt="Rakhi Image" />
+      <h3 id="modalDesc"></h3>
+      <div class="price-tag" id="modalPrice"></div>
+      <a id="whatsappLink" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i> Order on WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // ===== Rakhi Data =====
+    const rakhiData = {
+      premium: [
+        { img: "images1/1-removebg-preview.png", name: "Traditional Rakhi", price: "₹79" },
+        { img: "images1/3-removebg-preview.png", name: "Fancy Lumba Rakhi", price: "₹79" },
+        { img: "images1/4-removebg-preview.png", name: "Golden Thread Rakhi", price: "₹79" },
+        { img: "images1/5-removebg-preview.png", name: "Silver Beaded Rakhi", price: "₹79" },
+        { img: "images1/6-removebg-preview.png", name: "Kids Special Rakhi", price: "₹99" },
+        { img: "images1/7-removebg-preview.png", name: "Rudraksha Rakhi", price: "₹99" },
+        { img: "images1/8-removebg-preview.png", name: "Zardosi Rakhi", price: "₹99" },
+        { img: "images1/11-removebg-preview.png", name: "Om Design Rakhi", price: "₹99" },
+        { img: "images1/13-removebg-preview.png", name: "Lakshmi Rakhi", price: "₹89" },
+        { img: "images1/14-removebg-preview.png", name: "Ganesh Rakhi", price: "₹89" },
+        { img: "images1/15-removebg-preview.png", name: "Radha Krishna Rakhi", price: "₹99" },
+        { img: "images1/22-removebg-preview.png", name: "Stone Work Rakhi", price: "₹109" },
+        { img: "images1/23-removebg-preview.png", name: "Tassel Rakhi", price: "₹99" },
+        { img: "images/41.jpg", name: "Embroidery Rakhi", price: "₹89" },
+        { img: "images/42.jpg", name: "Patchwork Rakhi", price: "₹79" },
+        { img: "images/43.jpg", name: "Quilling Rakhi", price: "₹79" },
+        { img: "images/44.jpg", name: "Macrame Rakhi", price: "₹89" },
+        { img: "images/45.jpg", name: "Beaded Rakhi", price: "₹89" },
+        { img: "images/46.jpg", name: "Kundan Rakhi", price: "₹79" },
+        { img: "images/47.jpg", name: "Meenakari Rakhi", price: "₹79" },
+        { img: "images/48.jpg", name: "Meenakari Rakhi", price: "₹89" },
+        { img: "images/49.jpg", name: "Meenakari Rakhi", price: "₹149/2pcs" },
+        { img: "images/50.jpg", name: "Meenakari Rakhi", price: "₹79" }
+      ],
+      traditional: [
+        { img: "images1/2-removebg-preview.png", name: "Designer Pearl Rakhi", price: "₹40" },
+        { img: "images1/9-removebg-preview.png", name: "Resham Rakhi", price: "₹69" },
+        { img: "images1/10-removebg-preview.png", name: "Diamond Cut Rakhi", price: "₹69" },
+        { img: "images1/12-removebg-preview.png", name: "Swastik Rakhi", price: "₹69" },
+        { img: "images1/16-removebg-preview.png", name: "Shiv Parvati Rakhi", price: "₹69" },
+        { img: "images1/17-removebg-preview.png", name: "American Diamond Rakhi", price: "₹59" },
+        { img: "images1/18-removebg-preview.png", name: "Minimalist Rakhi", price: "₹59" },
+        { img: "images1/19-removebg-preview.png", name: "Floral Rakhi", price: "₹59" },
+        { img: "images1/20-removebg-preview.png", name: "Sibling Combo Rakhi", price: "₹59" },
+        { img: "images1/21-removebg-preview.png", name: "Wooden Rakhi", price: "₹59" },
+        { img: "images1/24-removebg-preview.png", name: "Peacock Rakhi", price: "₹49" },
+        { img: "images1/25-removebg-preview.png", name: "Temple Rakhi", price: "₹49" },
+        { img: "images1/26-removebg-preview.png", name: "Royal Rakhi", price: "₹39" },
+        { img: "images1/27-removebg-preview.png", name: "Eco-Friendly Rakhi", price: "₹39" },
+        { img: "images1/28-removebg-preview.png", name: "Handmade Rakhi", price: "₹49" },
+        { img: "images1/29-removebg-preview.png", name: "Sandalwood Rakhi", price: "₹49" },
+        { img: "images1/30-removebg-preview.png", name: "Tulsi Rakhi", price: "₹39" },
+        { img: "images1/31-removebg-preview.png", name: "Moon Rakhi", price: "₹29" },
+        { img: "images1/32-removebg-preview.png", name: "Star Rakhi", price: "₹29" },
+        { img: "images1/33-removebg-preview.png", name: "Heart Rakhi", price: "₹19" },
+        { img: "images1/34-removebg-preview.png", name: "Butterfly Rakhi", price: "₹19" },
+        { img: "images1/35-removebg-preview.png", name: "Bangle Rakhi", price: "₹29" },
+        { img: "images1/36-removebg-preview.png", name: "Bracelet Rakhi", price: "₹9/pcs" },
+        { img: "images1/37-removebg-preview.png", name: "Charm Rakhi", price: "₹9/pcs" },
+        { img: "images1/38-removebg-preview.png", name: "Crystal Rakhi", price: "₹9/pcs" },
+        { img: "images1/39-removebg-preview.png", name: "Mirror Work Rakhi", price: "₹49" },
+        { img: "images1/40-removebg-preview.png", name: "Sequins Rakhi", price: "₹19" }
+      ]
+    };
+
+    // ===== Utility Functions =====
+    function extractPrice(priceStr) {
+      // Extract numeric value from price string (handles cases like "₹79" or "₹149/2pcs")
+      const match = priceStr.match(/₹(\d+)/);
+      return match ? parseInt(match[1]) : 0;
+    }
+
+    // ===== Card Functions =====
+    function createCard(rakhi) {
+      return `
+        <div class="card" onclick="openModal(this)">
+          <img src="${rakhi.img}" alt="${rakhi.name}" />
+          <h3>${rakhi.name}</h3>
+          <div class="price-tag">${rakhi.price}</div>
+        </div>
+      `;
+    }
+
+    function sortRakhisByPrice(rakhis) {
+      return rakhis.sort((a, b) => extractPrice(a.price) - extractPrice(b.price));
+    }
+
+    function renderCards() {
+      const premiumContainer = document.getElementById('premium-rakhis');
+      const traditionalContainer = document.getElementById('traditional-rakhis');
+      
+      // Sort and render premium rakhis (low to high price)
+      const sortedPremium = sortRakhisByPrice(rakhiData.premium);
+      premiumContainer.innerHTML = sortedPremium.map(createCard).join('');
+      
+      // Sort and render traditional rakhis (low to high price)
+      const sortedTraditional = sortRakhisByPrice(rakhiData.traditional);
+      traditionalContainer.innerHTML = sortedTraditional.map(createCard).join('');
+    }
+
+    // ===== Modal Functions =====
+    function openModal(cardElement) {
+      const imgSrc = cardElement.querySelector('img').src;
+      const desc = cardElement.querySelector('h3').textContent;
+      const price = cardElement.querySelector('.price-tag').textContent;
+      
+      document.getElementById("modalImage").src = imgSrc;
+      document.getElementById("modalDesc").textContent = desc;
+      document.getElementById("modalPrice").textContent = price;
+      document.getElementById("whatsappLink").href = `https://wa.me/919919617132?text=Hi,%20I%20want%20to%20order%20${encodeURIComponent(desc)}%20for%20${price}`;
+      document.getElementById("imageModal").style.display = "flex";
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeModal() {
+      document.getElementById("imageModal").style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+
+    // ===== Event Listeners =====
+    document.addEventListener('DOMContentLoaded', renderCards);
+
+    window.onclick = function(event) {
+      const modal = document.getElementById("imageModal");
+      if (event.target === modal) {
+        closeModal();
+      }
+    }
+  </script>
+
+</body>
+</html>
