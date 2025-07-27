@@ -522,16 +522,34 @@
 
   <!-- ===== Main Content Section ===== -->
   <div class="container">
-    <!-- Premium Rakhis (₹80 and above) -->
-    <h2 class="category-title">Premium Rakhis</h2>
-    <div class="cards" id="premium-rakhis">
-      <!-- Premium rakhis will be inserted here by JavaScript -->
+    <!-- Stone Studded Rakhis -->
+    <h2 class="category-title">Stone Studded Rakhis</h2>
+    <div class="cards" id="stone-rakhis">
+      <!-- Stone studded rakhis will be inserted here by JavaScript -->
     </div>
 
-    <!-- Traditional Rakhis (Below ₹80) -->
-    <h2 class="category-title">Traditional Rakhis</h2>
-    <div class="cards" id="traditional-rakhis">
-      <!-- Traditional rakhis will be inserted here by JavaScript -->
+    <!-- Kundan Rakhis -->
+    <h2 class="category-title">Kundan Rakhis</h2>
+    <div class="cards" id="kundan-rakhis">
+      <!-- Kundan rakhis will be inserted here by JavaScript -->
+    </div>
+
+    <!-- Resham Rakhis -->
+    <h2 class="category-title">Resham Rakhis</h2>
+    <div class="cards" id="resham-rakhis">
+      <!-- Resham rakhis will be inserted here by JavaScript -->
+    </div>
+
+    <!-- Kids Rakhis -->
+    <h2 class="category-title">Kids Rakhis</h2>
+    <div class="cards" id="kids-rakhis">
+      <!-- Kids rakhis will be inserted here by JavaScript -->
+    </div>
+
+    <!-- Ladies Rakhis -->
+    <h2 class="category-title">Ladies Rakhis</h2>
+    <div class="cards" id="ladies-rakhis">
+      <!-- Ladies rakhis will be inserted here by JavaScript -->
     </div>
   </div>
 
@@ -572,59 +590,59 @@
   <script>
     // ===== Rakhi Data =====
     const rakhiData = {
-      premium: [
-        { img: "images1/1-removebg-preview.png", name: "Traditional Rakhi", price: "₹79" },
-        { img: "images1/3-removebg-preview.png", name: "Fancy Lumba Rakhi", price: "₹79" },
+      stone: [
+        { img: "images1/22-removebg-preview.png", name: "Stone Work Rakhi", price: "₹109" },
+        { img: "images1/17-removebg-preview.png", name: "American Diamond Rakhi", price: "₹59" },
+        { img: "images1/10-removebg-preview.png", name: "Diamond Cut Rakhi", price: "₹69" }
+      ],
+      kundan: [
+        { img: "images/46.jpg", name: "Kundan Rakhi", price: "₹79" },
+        { img: "images/47.jpg", name: "Kundan Meenakari Rakhi", price: "₹79" },
+        { img: "images/48.jpg", name: "Kundan Rakhi", price: "₹89" },
+        { img: "images/49.jpg", name: "Kundan Rakhi Set", price: "₹149/2pcs" },
+        { img: "images/50.jpg", name: "Kundan Rakhi", price: "₹79" }
+      ],
+      resham: [
+                        { img: "images1/9-removebg-preview.png", name: "Resham Rakhi", price: "₹69" },
+
+        { img: "images1/12-removebg-preview.png", name: "Resham Swastik Rakhi", price: "₹69" },
+        { img: "images1/19-removebg-preview.png", name: "Floral Resham Rakhi", price: "₹59" },
+      ],
+      ladies: [
+        { img: "images1/6-removebg-preview.png", name: "Kids Special Rakhi", price: "₹99" },
+         { img: "images1/3-removebg-preview.png", name: "Fancy Lumba Rakhi", price: "₹79" },
         { img: "images1/4-removebg-preview.png", name: "Golden Thread Rakhi", price: "₹79" },
         { img: "images1/5-removebg-preview.png", name: "Silver Beaded Rakhi", price: "₹79" },
-        { img: "images1/6-removebg-preview.png", name: "Kids Special Rakhi", price: "₹99" },
-        { img: "images1/7-removebg-preview.png", name: "Rudraksha Rakhi", price: "₹99" },
-        { img: "images1/8-removebg-preview.png", name: "Zardosi Rakhi", price: "₹99" },
-        { img: "images1/11-removebg-preview.png", name: "Om Design Rakhi", price: "₹99" },
-        { img: "images1/13-removebg-preview.png", name: "Lakshmi Rakhi", price: "₹89" },
-        { img: "images1/14-removebg-preview.png", name: "Ganesh Rakhi", price: "₹89" },
-        { img: "images1/15-removebg-preview.png", name: "Radha Krishna Rakhi", price: "₹99" },
-        { img: "images1/22-removebg-preview.png", name: "Stone Work Rakhi", price: "₹109" },
-        { img: "images1/23-removebg-preview.png", name: "Tassel Rakhi", price: "₹99" },
-        { img: "images/41.jpg", name: "Embroidery Rakhi", price: "₹89" },
-        { img: "images/42.jpg", name: "Patchwork Rakhi", price: "₹79" },
-        { img: "images/43.jpg", name: "Quilling Rakhi", price: "₹79" },
-        { img: "images/44.jpg", name: "Macrame Rakhi", price: "₹89" },
-        { img: "images/45.jpg", name: "Beaded Rakhi", price: "₹89" },
-        { img: "images/46.jpg", name: "Kundan Rakhi", price: "₹79" },
-        { img: "images/47.jpg", name: "Meenakari Rakhi", price: "₹79" },
-        { img: "images/48.jpg", name: "Meenakari Rakhi", price: "₹89" },
-        { img: "images/49.jpg", name: "Meenakari Rakhi", price: "₹149/2pcs" },
-        { img: "images/50.jpg", name: "Meenakari Rakhi", price: "₹79" }
-      ],
-      traditional: [
-        { img: "images1/2-removebg-preview.png", name: "Designer Pearl Rakhi", price: "₹40" },
-        { img: "images1/9-removebg-preview.png", name: "Resham Rakhi", price: "₹69" },
-        { img: "images1/10-removebg-preview.png", name: "Diamond Cut Rakhi", price: "₹69" },
-        { img: "images1/12-removebg-preview.png", name: "Swastik Rakhi", price: "₹69" },
-        { img: "images1/16-removebg-preview.png", name: "Shiv Parvati Rakhi", price: "₹69" },
-        { img: "images1/17-removebg-preview.png", name: "American Diamond Rakhi", price: "₹59" },
-        { img: "images1/18-removebg-preview.png", name: "Minimalist Rakhi", price: "₹59" },
-        { img: "images1/19-removebg-preview.png", name: "Floral Rakhi", price: "₹59" },
-        { img: "images1/20-removebg-preview.png", name: "Sibling Combo Rakhi", price: "₹59" },
-        { img: "images1/21-removebg-preview.png", name: "Wooden Rakhi", price: "₹59" },
-        { img: "images1/24-removebg-preview.png", name: "Peacock Rakhi", price: "₹49" },
-        { img: "images1/25-removebg-preview.png", name: "Temple Rakhi", price: "₹49" },
-        { img: "images1/26-removebg-preview.png", name: "Royal Rakhi", price: "₹39" },
-        { img: "images1/27-removebg-preview.png", name: "Eco-Friendly Rakhi", price: "₹39" },
-        { img: "images1/28-removebg-preview.png", name: "Handmade Rakhi", price: "₹49" },
-        { img: "images1/29-removebg-preview.png", name: "Sandalwood Rakhi", price: "₹49" },
-        { img: "images1/30-removebg-preview.png", name: "Tulsi Rakhi", price: "₹39" },
-        { img: "images1/31-removebg-preview.png", name: "Moon Rakhi", price: "₹29" },
-        { img: "images1/32-removebg-preview.png", name: "Star Rakhi", price: "₹29" },
         { img: "images1/33-removebg-preview.png", name: "Heart Rakhi", price: "₹19" },
         { img: "images1/34-removebg-preview.png", name: "Butterfly Rakhi", price: "₹19" },
+        { img: "images1/31-removebg-preview.png", name: "Moon Rakhi", price: "₹29" },
+        { img: "images1/32-removebg-preview.png", name: "Star Rakhi", price: "₹29" },
         { img: "images1/35-removebg-preview.png", name: "Bangle Rakhi", price: "₹29" },
         { img: "images1/36-removebg-preview.png", name: "Bracelet Rakhi", price: "₹9/pcs" },
         { img: "images1/37-removebg-preview.png", name: "Charm Rakhi", price: "₹9/pcs" },
         { img: "images1/38-removebg-preview.png", name: "Crystal Rakhi", price: "₹9/pcs" },
-        { img: "images1/39-removebg-preview.png", name: "Mirror Work Rakhi", price: "₹49" },
-        { img: "images1/40-removebg-preview.png", name: "Sequins Rakhi", price: "₹19" }
+         { img: "images1/8-removebg-preview.png", name: "Zardosi Rakhi", price: "₹99" },
+        { img: "images1/13-removebg-preview.png", name: "Lakshmi Rakhi", price: "₹89" },
+        { img: "images1/14-removebg-preview.png", name: "Ganesh Rakhi", price: "₹89" },
+        { img: "images1/15-removebg-preview.png", name: "Radha Krishna Rakhi", price: "₹99" },
+        { img: "images1/23-removebg-preview.png", name: "Tassel Rakhi", price: "₹99" },
+         
+       
+        
+        { img: "images/44.jpg", name: "Macrame Rakhi", price: "₹89" },
+        { img: "images/45.jpg", name: "Beaded Rakhi", price: "₹89" }
+      ],
+      kids: [
+
+              { img: "images1/39-removebg-preview.png", name: "Mirror Work Resham Rakhi", price: "₹49" },
+        { img: "images1/40-removebg-preview.png", name: "Sequins Rakhi", price: "₹19" },
+         { img: "images/42.jpg", name: "Patchwork Rakhi", price: "₹79" },
+        { img: "images/41.jpg", name: "Embroidery Rakhi", price: "₹89" },
+        { img: "images/43.jpg", name: "Quilling Rakhi", price: "₹79" }
+
+       
+       
+       
       ]
     };
 
@@ -651,16 +669,12 @@
     }
 
     function renderCards() {
-      const premiumContainer = document.getElementById('premium-rakhis');
-      const traditionalContainer = document.getElementById('traditional-rakhis');
-      
-      // Sort and render premium rakhis (low to high price)
-      const sortedPremium = sortRakhisByPrice(rakhiData.premium);
-      premiumContainer.innerHTML = sortedPremium.map(createCard).join('');
-      
-      // Sort and render traditional rakhis (low to high price)
-      const sortedTraditional = sortRakhisByPrice(rakhiData.traditional);
-      traditionalContainer.innerHTML = sortedTraditional.map(createCard).join('');
+      // Sort and render all categories
+      Object.keys(rakhiData).forEach(category => {
+        const container = document.getElementById(`${category}-rakhis`);
+        const sortedRakhis = sortRakhisByPrice(rakhiData[category]);
+        container.innerHTML = sortedRakhis.map(createCard).join('');
+      });
     }
 
     // ===== Modal Functions =====
